@@ -1,0 +1,123 @@
+/* style.css */
+
+/* Estilo do Corpo da Página */
+body { 
+    font-family: 'Arial', sans-serif; 
+    background-color: #f0f2f5; 
+    padding: 30px; 
+    margin: 0;
+}
+
+/* Container Principal do Formulário */
+.container { 
+    max-width: 750px; 
+    margin: auto; 
+    background: white; 
+    padding: 40px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+}
+
+/* Título e Subtítulos */
+h1 { 
+    text-align: center; 
+    color: #000000; 
+    margin-bottom: 30px; 
+}
+h2 { 
+    border-bottom: 2px solid #eee; 
+    padding-bottom: 5px; 
+    color: #333; 
+    margin-top: 25px; 
+}
+
+/* Rótulos (Labels) */
+label { 
+    display: block; 
+    margin-top: 15px; 
+    font-weight: bold; 
+    color: #555; 
+}
+
+/* Campos de Input e Textarea */
+input[type="text"], 
+input[type="email"], 
+textarea { 
+    width: 100%; 
+    padding: 12px; 
+    margin-top: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    transition: border-color 0.3s;
+}
+input:focus, 
+textarea:focus { 
+    border-color: #284aa7; 
+    outline: none;
+}
+textarea { 
+    resize: vertical; 
+    height: 120px; 
+}
+
+/* Botão de Envio */
+button { 
+    background-color: #284aa7; 
+    color: white; 
+    padding: 12px 25px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-top: 30px; 
+    font-size: 17px; 
+    display: block; 
+    width: 100%; 
+    transition: background-color 0.3s;
+}
+button:hover { 
+    background-color: #284aa7; 
+}
+
+/* Estilo para links de Adicionar */
+.add-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #284aa7;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.add-link:hover {
+    color: #284aa7;
+}
+
+/* Estilo para grupos dinâmicos */
+.dynamic-input {
+    border: 1px dashed #ccc;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+/* Estilo para botão de Remover */
+.removerCampo {
+    background-color: #dc3545; 
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: auto; 
+    font-size: 14px;
+    float: right; 
+}
+.removerCampo:hover {
+    background-color: #c82333;
+}
+.dynamic-input::after {
+    content: "";
+    display: table;
+    clear: both;
+}
